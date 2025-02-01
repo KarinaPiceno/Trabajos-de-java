@@ -7,6 +7,7 @@ public class HolaMundo {
      * /
     public static void main(String[] args) {
         /**La siguiente linea de código imprime "Hola Mundo (Karina estuvo aquí)" en consola
+         * 
          */
         System.out.println("Hola Mundo (Karina estuvo aquí)");
     }
