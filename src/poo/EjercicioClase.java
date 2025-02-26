@@ -16,6 +16,7 @@ public class EjercicioClase {
         //ejercicios de try catch
             try{
                 int c = 10/0;
+                System.out.println(c);
             }catch(ArithmeticException | NumberFormatException e){
                 System.out.println("hubo un error");
             }finally{};

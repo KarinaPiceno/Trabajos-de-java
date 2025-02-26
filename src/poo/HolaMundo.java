@@ -9,6 +9,6 @@ public class HolaMundo {
         /**La siguiente linea de código imprime "Hola Mundo (Karina estuvo aquí)" en consola
          * 
          */
-        System.out.println("Hola Mundo (Karina estuvo aquí)");
-    }
+        //System.out.println("Hola Mundo (Karina estuvo aquí)");
 }
+

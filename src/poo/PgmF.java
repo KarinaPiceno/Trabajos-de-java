@@ -22,7 +22,7 @@ public class PgmF {
 				//se convierte el numero ingresado por el usuario de string a integer para poder usarlo cono un número y no un char
 			    int num = Integer.parseInt(UserImput);
 				
-				//se revisa que el número sea menor a 100 y mayor a 0 para revisar que esté dentro del rando dado, al no cumplir cualquiera de estas dos condiciones 
+				//se revisa que el número sea menor a 100 y mayor a 0 para revisar que esté dentro del rango dado, al no cumplir cualquiera de estas dos condiciones 
 				//se avisa al usuario y se suma un error
 				if (num>100 || num<0){
 					errores ++;
@@ -33,17 +33,17 @@ public class PgmF {
 				// Primero determino si un numero es par, ya que (sin contar el mismo 2) todos los numeros pares son divisibles estre dos, así que si lo podemos 
 				//dividir entre dos ya no es posible que sea número primo, que si recordamos la definicion son numeros que solo son divisibles entre si mismos y el 
 				//numero 1. Al hacer primero la busqueda de los pares nos desasemos de la necesidad de alargar el proceso buscando los numeros primos cada vez.
-				//En caso de que encuentre un numero par hace imprime el resultado y hace un brake para salir del ciclo y terminar el programa
+				//En caso de que encuentre un numero par imprime el resultado y hace un brake para salir del ciclo y terminar el programa
 			    if (num%2==0&&num!=2){
 				    JOptionPane.showMessageDialog(null, "El número " + num + " es par");
 				    break;
 
 				/*Si el número no era par entonces va a determinar si es primo o solo impar. Para saber esto lo que hace es que mediante un ciclo va a ir dividiendo el 
-                 *número con todos los anteriores a el hasta llegar a 0. Cada que encuentre una division que tenga como residuo 0 (que sea exacra) se le agregara uno 
+                 *número con todos los anteriores a el hasta llegar a 0. Cada que encuentre una division que tenga como residuo 0 (que sea exacta) se le agregara uno 
 				 *a la variable x que en este caso se usa como un contador de divisores
 				 */
 			    } else {
-					//pongo el caso específico del 2 porque es el único nú19mero par y primo a la vez
+					//pongo el caso específico del 2 porque es el único número par y primo a la vez
 					if (num==2) {
 						JOptionPane.showMessageDialog(null, "El número " + num + " es primo y par");
 						break;

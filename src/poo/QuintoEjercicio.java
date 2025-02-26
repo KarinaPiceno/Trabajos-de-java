@@ -53,7 +53,7 @@ public class QuintoEjercicio {
             if (UserImput.trim().equals(palabra)==true){
                 JOptionPane.showMessageDialog(null, "Felicidades!!!!" + "\n" + "Adivinaste la palabra :)" + "\n" + "Lo lograste en "+i+" intentos");
                 break;
-            } else if (UserImput.isEmpty()==true){
+            } else if (UserImput.isEmpty()){
                 continue;
             }else {
                 JOptionPane.showMessageDialog(null, "Respuesta incorrecta, intentalo de nuevo");
